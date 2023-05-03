@@ -46,8 +46,8 @@ details summary ~ * {
 
     const GUI = document.createElement('div');
     GUI.appendChild(style);
-    GUI.style.width = '400px';
-    //GUI.style.height = '500px';
+    GUI.style.width = '100%';
+    GUI.style.height = '100%';
     GUI.style.background = '#000000';
     GUI.style.borderRadius = '10px';
     GUI.style.position = 'absolute';

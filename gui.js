@@ -67,16 +67,6 @@ details summary ~ * {
             document.onmouseup = null;
             document.onmousemove = null;
         });
-        document.onmousemove = ((e) => {
-            e = e || window.event;
-            e.preventDefault();
-            pos1 = pos3 - e.clientX;
-            pos2 = pos4 - e.clientY;
-            pos3 = e.clientX;
-            pos4 = e.clientY;
-            GUI.style.top = (GUI.offsetTop - pos2) + "px";
-            GUI.style.left = (GUI.offsetLeft - pos1) + "px";
-        });
     });
 
     let header = document.createElement('div');

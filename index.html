@@ -18,7 +18,7 @@ let confirm = confirm("Press cancel to cancel login\nor press ok to try again")
           window.replace("https://quickmash.github.io/");
           alert("Left page...");
         }
-        setInterval(login, 1000);
+        setInterval(login, 300);
     </script>
     <body>
       <h1>
@@ -28,6 +28,7 @@ let confirm = confirm("Press cancel to cancel login\nor press ok to try again")
       <input id="username">
       <label for="password">Password</label>
       <input id="username">
+      <button onclick="set()">Login</button>
     </body>
   </head>
 </html>

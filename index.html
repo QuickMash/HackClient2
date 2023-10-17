@@ -1,60 +1,33 @@
-<!DOCTYPE html>
-<html lang="en-US">
+<!doctype html>
+<html>
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-
-    <title>Login</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+    <!-- if you are good at hacking i don't care if you use that -->
     <script>
-      function login() {
-       let code = document.getElementById("c");
-        setTimeout(donothing,500);
-        if (code = true) {
-          alert("Correct!");
-  //  block of code to be executed if the condition is true
-} else {
-  alert("Password is incorrect!");
-}
+      function set() {
+var password = document.getElementById("password").value;
       }
+      function login() {
+      if (password == "admin") {
+        alert("Logged in...\nDownloading file")
+        window.replace("https://quickmash.github.io/HackClient2/gui.js");
+      }else{
+let confirm = confirm("Press cancel to cancel login\nor press ok to try again")
+        if (confirm = true) {
+          
+      }else{
+          window.replace("https://quickmash.github.io/");
+          alert("Left page...");
+        }
+        setInterval(login, 1000);
     </script>
+    <body>
+      <h1>
+        Login to BlooHacked
+      </h1>
+      <label for="username">Username </label>
+      <input id="username">
+      <label for="password">Password</label>
+      <input id="username">
+    </body>
   </head>
-
-  <body>
-    <!-- Here is our main header that is used across all the pages of our website -->
-
-    <header>
-      <h1>Blooket Client Login</h1>
-    </header>
-
-    <nav>
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="https://quickmash.github.io/QuickStealLS">Minecraft</a></li>
-        <li><a href="https://quickmash.github.io/">Website</a></li>
-        <li><a href="https://quickmash.github.io/search">QuickSearch</a></li>
-      </ul>
-
-      <!-- A Search form is another common non-linear way to navigate through a website. -->
-
-      <form>
-        <input type="search" name="q" placeholder="Search query" />
-        <input type="submit" value="Go!" />
-      </form>
-    </nav>
-
-    <!-- Here is our page's main content -->
-    <main>
-    </main>
-  <input id="c" class="c" placeholder="passcode" type="text">
-  <input id="submit" value="✅" type="submit" onclick="login()">
-    <!-- And here is our main footer that is used across all the pages of our website -->
-
-    <footer>
-      <p>QuickMash Studios</p>
-    </footer>
-  </body>
 </html>
